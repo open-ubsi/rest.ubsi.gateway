@@ -1,0 +1,11 @@
+{
+  "io_threads": 0,
+  "timeout_connect": 5,
+  "timeout_request": 10,
+  "timeout_reconnect": 600,
+
+  "redis_host": "redis.host",
+  "redis_port": 6379,
+  "redis_conn_idle": 8,
+  "redis_conn_max": 128
+}

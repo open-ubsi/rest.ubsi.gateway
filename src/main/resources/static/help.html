@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据类型的对应</title>
+</head>
+<body>
+<table cellpadding="4" cellspacing="0">
+    <tr>
+        <td><b>UBSI数据类型</b></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td><b>Java表达式</b></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td><b>JSON表达式</b></td>
+    </tr>
+    <tr>
+        <td colspan="5"><hr></td>
+    </tr>
+    <tr>
+        <td>null</td>
+        <td></td>
+        <td>null</td>
+        <td></td>
+        <td>null</td>
+    </tr>
+    <tr bgcolor="#f0f0f0">
+        <td>bool</td>
+        <td></td>
+        <td>boolean b = true;</td>
+        <td></td>
+        <td>true or false</td>
+    </tr>
+    <tr>
+        <td>byte</td>
+        <td></td>
+        <td>byte b = 0xff;</td>
+        <td></td>
+        <td>{ "$t": "byte", "$v": -1 }</td>
+    </tr>
+    <tr bgcolor="#f0f0f0">
+        <td>int</td>
+        <td></td>
+        <td>int i = 123;</td>
+        <td></td>
+        <td>123</td>
+    </tr>
+    <tr>
+        <td>long</td>
+        <td></td>
+        <td>long l = 12345;</td>
+        <td></td>
+        <td>{ "$t": "long", "$v": 12345 }</td>
+    </tr>
+    <tr bgcolor="#f0f0f0">
+        <td>bigint</td>
+        <td></td>
+        <td>BigInteger bi = new BigInteger("1234567");</td>
+        <td></td>
+        <td>{ "$t": "bigint", "$v": "1234567" }</td>
+    </tr>
+    <tr>
+        <td>double</td>
+        <td></td>
+        <td>double d = 123.45;</td>
+        <td></td>
+        <td>123.45 or { "$t": "double", "$v": 123 } (当值为整数时的表示方式)</td>
+    </tr>
+    <tr bgcolor="#f0f0f0">
+        <td>bignum</td>
+        <td></td>
+        <td>BigDecimal bd = new BigDecimal("12345.67");</td>
+        <td></td>
+        <td>{ "$t": "bignum", "$v": "12345.67" }</td>
+    </tr>
+    <tr>
+        <td>string</td>
+        <td></td>
+        <td>String str = "abc"</td>
+        <td></td>
+        <td>"abc"</td>
+    </tr>
+    <tr bgcolor="#f0f0f0">
+        <td>map</td>
+        <td></td>
+        <td>Map map = new HashMap();</td>
+        <td></td>
+        <td>{ }</td>
+    </tr>
+    <tr>
+        <td>list</td>
+        <td></td>
+        <td>List list = new ArrayList();</td>
+        <td></td>
+        <td>[ ]</td>
+    </tr>
+    <tr bgcolor="#f0f0f0">
+        <td>set</td>
+        <td></td>
+        <td>Set set = new HashSet();</td>
+        <td></td>
+        <td>{ "$t": "set", "$v": [ ] }</td>
+    </tr>
+    <tr>
+        <td>bytes</td>
+        <td></td>
+        <td>byte[] ba = new byte[] { 0x0a, 0x0b };</td>
+        <td></td>
+        <td>{ "$t": "bytes", "$v": "0a0b" }</td>
+    </tr>
+    <tr bgcolor="#f0f0f0">
+        <td>array</td>
+        <td></td>
+        <td>Object[] oa = new Object[] { null };</td>
+        <td></td>
+        <td>{ "$t": "array", "$v": [ null ] }</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td></td>
+        <td>ObjectId id = new org.bson.types.ObjectId();</td>
+        <td></td>
+        <td>{ "$t": "id", "$v": "xxxxxx" }</td>
+    </tr>
+    <tr bgcolor="#f0f0f0">
+        <td>pattern</td>
+        <td></td>
+        <td>Pattern pattern = Pattern.compile("^.*abc$", Pattern.CASE_INSENSITIVE);</td>
+        <td></td>
+        <td>{ "$t": "pattern", "$v": "^.*abc$/2" }</td>
+    </tr>
+</table>
+</body>
+</html>
