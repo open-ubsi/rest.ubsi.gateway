@@ -8,7 +8,7 @@ UBSI微服务RestAPI网关
   
 - 运行配置
 
-  默认的UBSI Consumer配置文件：./rewin.ubsi.consumer.json
+  默认的UBSI Consumer配置文件：rewin.ubsi.consumer.json
   
   默认的服务运行参数配置文件：src/main/resource/application.properties
  
