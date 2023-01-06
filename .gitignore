@@ -10,10 +10,16 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 .idea/
-target/
+target/archive-tmp/
+target/classes/
+target/generated-sources/
+target/generated-test-sources/
+target/maven-archiver/
+target/maven-status/
+target/test-classes/
 
 # Package Files #
-*.jar
+*.original
 *.war
 *.nar
 *.ear
